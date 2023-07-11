@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faizan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav-cointainer">
+      <div id="Navbar">
+        <img src="ASSET/lOGO.png" alt="Logo" class="nav-logo" />
+        <ul id="sidemenu">
+          <li><a href="#Navbar">Home</a></li>
+          <li><a href="#Aboutt">About</a></li>
+          <li><a href="#serve">Services</a></li>
+          <li><a href="#Portfolioo">Portfolio</a></li>
+          <li><a href="#Contactt">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </div>
+    </div>
+
+    <div id="Cointainer">
+      <div class="Content">
+        <div class="Text-bar">
+          <p>
+            FULL <span class="clr-span">STACK</span> WEB
+            <span class="clr-span">DEV</span>
+          </p>
+          <h1>
+            Heyy... I'm <span class="clr-span">Faizan</span> <br />
+            From Puna.
+          </h1>
+        </div>
+        <img src="ASSET/hERO.webp" alt="Hero-img" />
+      </div>
+    </div>
+
+    <div class="Box" id="Aboutt">
+      <div class="About">
+        <div class="row">
+          <div class="Abt-col-1">
+            <img src="ASSET/aBOUT.jpg" />
+          </div>
+          <div class="Abt-col-2">
+            <h1 class="Abt-h1">About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+              obcaecati delectus maiores, minus illo doloremque tempora dolore
+              neque consequatur nobis, asperiores sed consequuntur excepturi
+              odio, voluptatibus velit dicta voluptates ea possimus aliquid.
+              Iure, eum.lorem34 Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Illo amet voluptatibus nostrum hic?
+              Necessitatibus quibusdam pariatur saepe! Distinctio est nam,
+              quisquam omnis eum nobis explicabo pariatur quo esse ex error
+              natus sint, cupiditate beatae.
+            </p>
+            <div class="Tab-titles">
+              <p class="Tab-links Active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="Tab-links" onclick="opentab('education')">Education</p>
+              <p class="Tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="Tab-contents Active-tab" id="skills">
+              <ul>
+                <li><span class="clr-span">UI/UX</span><br />React Dev</li>
+                <li><span class="clr-span">Node js</span><br />Bankend Dev</li>
+                <li>
+                  <span class="clr-span">Mongo DB</span><br />Database handeling
+                </li>
+              </ul>
+            </div>
+            <div class="Tab-contents" id="education">education-none</div>
+            <div class="Tab-contents" id="experience">experience-none</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Services" id="serve">
+      <div class="service-cointainer">
+        <h1 class="Services-h1">Services</h1>
+        <div class="box">
+          <div class="boxes">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h1>Web Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              labore quis quaerat sequi earum quae perferendis reprehenderit
+              repellat iusto hic? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Veritatis, et!
+            </p>
+            <button><a href="#" target="_blank">Learn More</a></button>
+          </div>
+          <div class="boxes">
+            <i class="fa fa-database" aria-hidden="true"></i>
+            <h1>Database</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              labore quis quaerat sequi earum quae perferendis reprehenderit
+              repellat iusto hic? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Veritatis, et!
+            </p>
+            <button><a href="#" target="_blank">Learn More</a></button>
+          </div>
+          <div class="boxes">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <h1>Backend</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              labore quis quaerat sequi earum quae perferendis reprehenderit
+              repellat iusto hic? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Veritatis, et!
+            </p>
+            <button><a href="#" target="_blank">Learn More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Portfolio" id="Portfolioo">
+      <div class="Portfolio-cointainer">
+        <h1 class="Portfolio-h1">Portfolio</h1>
+        <div class="box-2">
+          <div class="boxes-2">
+            <img src="ASSET/Socialmeadiaapp.jpg" alt="" />
+            <div class="hover-layer">
+              <h3>Social meadia app</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt, fuga!
+              </p>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <div class="boxes-2">
+            <img src="ASSET/musi1.png" alt="" />
+            <div class="hover-layer">
+              <h3>Music player app</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt, fuga!
+              </p>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <div class="boxes-2">
+            <img
+              src="ASSET/pngtree-ecommerce-icon-set-for-website-and-mobile-app-png-image_1769638.jpg"
+              alt=""
+            />
+            <div class="hover-layer">
+              <h3>Ecomerce app</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt, fuga!
+              </p>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Contact" id="Contactt">
+      <div class="Contact-cointainer">
+        <div class="row">
+          <div class="Contact-left">
+            <h1 class="Contact-h1">Contact</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> Faizanc25@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 8485832530</p>
+            <div class="Social-media">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <button>Download Cv</button>
+            </div>
+          </div>
+          <div class="Contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder=" Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder=" Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

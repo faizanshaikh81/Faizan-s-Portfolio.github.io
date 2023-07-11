@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@700&family=Josefin+Sans:ital@1&family=Poppins:ital,wght@1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #080808;
+  color: aliceblue;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------------------------NAVBAR---------------------------------------------------------------------------- */
+
+.nav-cointainer
+{
+  padding: 10px 10%;;
+}
+
+#Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#Navbar .portf-logo {
+  display: none;
+}
+
+#Navbar .fas 
+{
+  display: none;
+}
+
+#Navbar .nav-logo {
+  width: 140px;
+}
+
+#Navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+#Navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: 25px;
+  position: relative;
+  font-size: 28px;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  background: crimson;
+  left: 0;
+  bottom: -8px;
+  width: 0px;
+  height: 4px;
+  transition: 0.5s;
+}
+
+ul li a:hover:after {
+  width: 100%;
+}
+
+ul #bar,
+#mark {
+  font-size: 40px;
+  display: none;
+}
+
+/* ----------------------------------------------------------------------CONTENT---------------------------------------------------------------------------- */
+
+#Cointainer {
+  width: 100%;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Content .Text-bar {
+  padding: 250px;
+}
+.Text-bar p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.Text-bar h1 {
+  font-size: 60px;
+}
+
+.clr-span {
+  color: crimson;
+}
+
+/* ----------------------------------------------------------------------ABOUT---------------------------------------------------------------------------- */
+
+.Box {
+  max-width: 1700px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.About {
+  padding: 80px 0px;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Abt-col-1 {
+  flex-basis: 35%;
+}
+
+.Abt-col-1 img {
+  width: 76%;
+  border-radius: 15px;
+}
+
+.Abt-col-2 {
+  flex-basis: 65%;
+  margin-top: 70px;
+}
+.Abt-col-2 p {
+  font-size: 22px;
+}
+
+.Abt-col-2 .Abt-h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.Tab-titles {
+  display: flex;
+  margin: 30px 0 40px;
+}
+
+.Tab-links {
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.Tab-links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: crimson;
+  bottom: -8px;
+  height: 4px;
+  width: 0;
+  transition: 0.5s;
+}
+
+.Tab-links.Active-link::after {
+  width: 50%;
+}
+
+.Tab-contents ul li {
+  list-style: none;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.Tab-contents {
+  display: none;
+}
+
+.Tab-contents.Active-tab {
+  display: block;
+}
+
+/* ----------------------------------------------------------------------SERVICES---------------------------------------------------------------------------- */
+
+.Services {
+  padding: 30px 0;
+}
+
+.service-cointainer {
+  max-width: 1600px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 950px;
+}
+
+.Services-h1 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ababab;
+  padding-top: 40px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 0;
+  flex-wrap: wrap;
+}
+
+.box .boxes {
+  width: 425px;
+  height: 400px;
+  background: #131212;
+  position: relative;
+  margin-left: 10px;
+  transition: background 0.5s, transform 0.5s;
+  border-radius: 10px;
+}
+
+.box .boxes:hover {
+  background: crimson;
+  transform: translateY(-10px);
+}
+
+.boxes i {
+  font-size: 40px;
+  position: absolute;
+  left: 59px;
+  top: 48px;
+}
+
+.boxes h1 {
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boxes p {
+  padding: 20px 20px;
+  font-size: 18px;
+}
+
+.boxes button {
+  width: 220px;
+  height: 47px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  border-radius: 30px;
+  position: absolute;
+  left: 70px;
+  top: 374px;
+  transition: 0.5s;
+}
+
+.boxes button a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.boxes button:hover {
+  background: #ababab;
+}
+
+.boxes button a:hover {
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: white;
+}
+
+.btn-sm {
+  width: 270px;
+  height: 60px;
+  border-radius: 5px;
+  background:transparent;
+  border: 2px solid crimson;
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  overflow: none;
+  margin-left: 600px;
+  margin-top: 60px;
+}
+
+.btn-sm:hover
+{
+  background: crimson;
+  letter-spacing: 2px;
+  font-size: 28px;
+  border: 1px solid #131212;
+}
+
+/* ----------------------------------------------------------------------PORTFOLIO---------------------------------------------------------------------------- */
+.Portfolio {
+  padding: 30px 0;
+}
+
+.Portfolio-cointainer {
+  max-width: 1600px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 1150px;
+}
+
+.Portfolio-h1 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ababab;
+  padding-top: 40px;
+}
+.box-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  flex-wrap: wrap;
+}
+
+.boxes-2 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.boxes-2 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.boxes-2:hover img {
+  transform: scale(1.1);
+}
+
+.hover-layer {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), crimson);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 30px;
+  transition: height 0.5s;
+}
+
+.boxes-2:hover .hover-layer {
+  height: 100%;
+}
+
+.hover-layer h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.hover-layer p {
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
+.hover-layer i {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+/* ----------------------------------------------------------------------Contact---------------------------------------------------------------------------- */
+
+.Contact {
+  padding: 10px 0;
+}
+
+.Contact-cointainer {
+  max-width: 1600px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 850px;
+}
+
+.Contact-h1 {
+  font-size: 70px;
+  margin-bottom: 60px;
+}
+.Contact-left {
+  flex-basis: 35px;
+}
+.Contact-left p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.Contact-left p i {
+  color: crimson;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.Contact-right {
+  flex-basis: 65px;
+}
+
+.Social-media {
+  margin-top: 80px;
+}
+
+.Social-media a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 33px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.Social-media a:hover {
+  color: crimson;
+  transform: translateY(-5px);
+}
+
+form input,
+form textarea {
+  width: 900px;
+  padding: 20px;
+  outline: none;
+  margin: 15px 0;
+  background: #262626;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+.Social-media button {
+  width: 250px;
+  height: 60px;
+  border-radius: 9px;
+  background: crimson;
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
+  margin-top: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  overflow: none;
+  border: none;
+}
+form button  {
+  width: 250px;
+  height: 60px;
+  border-radius: 9px;
+  background: crimson;
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  overflow: none;
+  border: none;
+  margin-top: 60px;
+}
+
+.Social-media button:hover,
+form button:hover {
+  letter-spacing: 2px;
+  font-size: 23px;
+  background: rgb(199, 52, 81);
+}
+
+#msg
+{
+  color: #61b752;
+  margin-top: 30px;
+  font-size: 20px;
+  display: block;
+  margin-left: 30px;
+}
+
+/*====================================================== =======================MEDIA------========================================= */
+
+@media only screen and (max-width: 600px) {
+  /* ----------------------------------------------------------------------NAVBAR---------------------------------------------------------------------------- */
+
+
+  #Navbar .fas 
+{
+  display: block;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+
+  #Navbar ul {
+    background: crimson;
+    position: fixed;
+    top: 0;
+  right: -200px;
+    width: 200px;
+    padding-top: 50px;
+    height: 100vh;
+    z-index: 999;
+    transition: .5s;
+  }
+ 
+
+  #Navbar ul li {
+ display: block;
+margin: 30px 50px;
+margin-top: 40px;
+  }
+  #Navbar ul .fas 
+  {
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 20px;
+  }
+
+  /* ----------------------------------------------------------------------CONTENT---------------------------------------------------------------------------- */
+
+  #Cointainer {
+    max-width: 100%;
+    position: relative;
+  }
+
+  #Cointainer .Content img {
+    width: 375px;
+    background-size: contain;
+    position: absolute;
+    left: 207px;
+    bottom: 30px;
+  }
+  .Content {
+    padding: 10px;
+  }
+
+  .Text-bar p {
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 40px;
+    
+  }
+
+  .Text-bar h1 {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 33px;
+    left: 19px;
+  }
+
+  /* ----------------------------------------------------------------------ABOUT---------------------------------------------------------------------------- */
+
+  .Abt-col-1 {
+    flex-basis: 100%;
+    margin: 10px 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .Abt-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .Abt-col-2 {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+  .Abt-col-2 p {
+    font-size: 18px;
+  }
+
+  .Abt-col-2 .Abt-h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  form input,
+  form textarea {
+    margin-top: 90px;
+    width: 400px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-left: 20px;
+  }
+  /* ----------------------------------------------------------------------SERVICES---------------------------------------------------------------------------- */
+
+  .Services {
+    padding: 10px 0;
+  }
+
+  .service-cointainer {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+  }
+
+  .Services-h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ababab;
+    padding-top: 10px;
+  }
+
+  .box {
+    margin-top: -200px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .box .boxes {
+    margin: 30px 10px;
+  }
+  .Tab-links {
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .Tab-contents ul li {
+    font-size: 19px;
+  }
+  /* ----------------------------------------------------Portfolio---------------------------------------------------------------------------- */
+
+  .Portfolio {
+    padding: 10px 0;
+  }
+
+  .Portfolio-cointainer {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Portfolio-h1 {
+    font-size: 50px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .box-2 {
+    padding: 30px 0;
+    margin: 0 90px;
+  }
+
+  .boxes-2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+
+  .boxes-2 img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  /* ----------------------------------------------------Contact---------------------------------------------------------------------------- */
+
+  .Social-media {
+    margin-top: 60px;
+  }
+
+  form button {
+    margin: 20px 30px;
+  }
+
+  form {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .Social-media button {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  form input,
+  form textarea {
+    margin-top: 30px;
+    width: 400px;
+    padding: 17px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-left: 20px;
+  }
+  #msg 
+  {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 80px;
+
+  }
+}
